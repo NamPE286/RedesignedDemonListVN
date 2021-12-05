@@ -320,4 +320,25 @@ hr {
   padding-top: 30px;
   font-size: 20px;
 }
+
+.changelogPanel {
+  margin-top: 40px;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0em 0em 1em #707070;
+          box-shadow: 0em 0em 1em #707070;
+}
+
+.changelogPanel .changelogPanelTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+  font-size: 20px;
+}
 /*# sourceMappingURL=style.css.map */
