@@ -79,8 +79,18 @@ body{
         background-color: rgb(218, 218, 218);
     }
 }
+
+.content{
+    display: flex;
+}
+.panel{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-top: 200px;
+}
 .topPlayerPanel{
-    margin-top: 150px;
     text-align: center;
     width: 300px;
     border-radius: 0.5em;
@@ -115,3 +125,75 @@ hr{
     color:black;
     width: 230px;
 }
+.MainListPanel{
+    margin-top: 40px;
+    text-align: center;
+    width: 300px;
+    border-radius: 0.5em;
+    box-shadow: 0em 0em 1em #707070;
+    .MainListPanelTitle{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        font-size: 20px;
+    }
+    .MainListPanelContent{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        padding-top: 30px;
+        align-items: center;
+        .mainlist{
+            margin-left: 10px;
+        }
+    }
+    .ml{
+        margin-left: 15px;
+        float:left;
+    }
+    .point1{
+        margin-right: 15px;
+        float:right;
+    }
+}
+hr{
+    display: block;
+    color:black;
+    width: 230px;
+}
+.mainpanel{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    width: 100%;
+    margin-top: 200px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 0.5em;
+    box-shadow: 0em 0em 1em #707070;
+}
+.panel1{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    margin-top: 160px;
+}
+.submitPanel{
+    margin-top: 40px;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    padding-top: 30px;
+    border-radius: 0.5em;
+    box-shadow: 0em 0em 1em #707070;
+    .submitTitle{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        font-size: 20px;
+    }
+}
+

@@ -109,8 +109,30 @@ body a {
   background-color: #dadada;
 }
 
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.panel {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 200px;
+}
+
 .topPlayerPanel {
-  margin-top: 150px;
   text-align: center;
   width: 300px;
   border-radius: 0.5em;
@@ -161,5 +183,122 @@ hr {
   display: block;
   color: black;
   width: 230px;
+}
+
+.MainListPanel {
+  margin-top: 40px;
+  text-align: center;
+  width: 300px;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0em 0em 1em #707070;
+          box-shadow: 0em 0em 1em #707070;
+}
+
+.MainListPanel .MainListPanelTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+.MainListPanel .MainListPanelContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  padding-top: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.MainListPanel .MainListPanelContent .mainlist {
+  margin-left: 10px;
+}
+
+.MainListPanel .ml {
+  margin-left: 15px;
+  float: left;
+}
+
+.MainListPanel .point1 {
+  margin-right: 15px;
+  float: right;
+}
+
+hr {
+  display: block;
+  color: black;
+  width: 230px;
+}
+
+.mainpanel {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 200px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0em 0em 1em #707070;
+          box-shadow: 0em 0em 1em #707070;
+}
+
+.panel1 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 160px;
+}
+
+.submitPanel {
+  margin-top: 40px;
+  text-align: center;
+  width: 300px;
+  height: 100px;
+  padding-top: 30px;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0em 0em 1em #707070;
+          box-shadow: 0em 0em 1em #707070;
+}
+
+.submitPanel .submitTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */
