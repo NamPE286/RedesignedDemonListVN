@@ -173,6 +173,16 @@ hr{
     margin-right: 40px;
     border-radius: 0.5em;
     box-shadow: 0em 0em 1em #707070;
+    .topPlayTitle{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        font-size: 20px;
+    }
+    .longline{
+
+    }
+    
 }
 .panel1{
     flex-grow: 1;

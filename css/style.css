@@ -263,6 +263,17 @@ hr {
           box-shadow: 0em 0em 1em #707070;
 }
 
+.mainpanel .topPlayTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+  font-size: 20px;
+}
+
 .panel1 {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
