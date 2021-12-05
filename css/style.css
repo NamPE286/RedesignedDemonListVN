@@ -22,8 +22,8 @@ body a {
 }
 
 .navbarIcon .settingIcon {
-  height: 40%;
-  width: 40%;
+  height: 3vh;
+  width: 3vh;
   padding-right: 34%;
 }
 
@@ -53,7 +53,7 @@ body a {
 
 .navbar ul a {
   display: block;
-  padding: 2vh;
+  padding: 10px;
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

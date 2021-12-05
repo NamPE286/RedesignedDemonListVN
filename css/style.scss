@@ -14,8 +14,8 @@ body{
     display: flex;
     align-items: center;
     .settingIcon{
-        height: 40%;
-        width: 40%;
+        height: 3vh;
+        width: 3vh;
         padding-right: 34%;
     }
 }
@@ -32,7 +32,7 @@ body{
         display: flex;
         a{
             display: block;
-            padding: 2vh;
+            padding: 10px;
             text-align: center;
         }
     }
