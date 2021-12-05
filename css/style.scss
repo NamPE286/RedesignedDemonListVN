@@ -5,14 +5,79 @@ body{
     margin-right: 30px;
     margin-top: 15px;
     margin-bottom: 15px;
-    background-color: rgb(233, 233, 233);
+    background-color: white;
+    @media screen and (max-width: 1200px) {
+        .navbar{
+            padding-left: 10%;
+            padding-right: 10%;
+            .navbarTitle{
+                font-size: 12px;
+                padding-left: 1vw;
+                padding-right: 1vw;
+            }
+        }
+        .navbarIcon{
+            justify-content: flex-end;
+            width: 80px;
+        }
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            margin-top: 40px;
+            .mainpanel{
+                margin-top: 40px;
+                text-align: center;
+                width: 92vw;
+            }
+            .panel{
+                margin-top: 0px;
+            }
+            .topPlayerPanel{
+                margin-top: 0px;
+                width: 92vw;
+                .topPlayerPanelContent{
+                    justify-content: center;
+                }
+            }
+            .MainListPanel{
+                width: 92vw;
+                .MainListPanelContent{
+                    justify-content: center;
+                }
+            }
+            .submitPanel{
+                width: 92vw;
+            }
+            .joinDiscordPanel{
+                width: 92vw;
+            }
+            .changelogPanel{
+                width: 92vw;
+            }
+            .panel1{
+                margin-top: 40px;
+            }
+        }
+        .navbar{
+            ul{
+                a{
+                    display: none;
+                }
+            }
+        }
+    }
     ul{
         list-style-type: none;
     }
     a{
         text-decoration: none;
-        color: black;
+        color: rgb(0, 0, 0);
         text-shadow: 0 0 1em #dbdbdb;
+    }
+    .longline{
+        width: 50%;
     }
 }
 

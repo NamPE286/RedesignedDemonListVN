@@ -5,7 +5,81 @@ body {
   margin-right: 30px;
   margin-top: 15px;
   margin-bottom: 15px;
-  background-color: #e9e9e9;
+  background-color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  body .navbar {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  body .navbar .navbarTitle {
+    font-size: 12px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+  body .navbarIcon {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 80px;
+  }
+  body .content {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 40px;
+  }
+  body .content .mainpanel {
+    margin-top: 40px;
+    text-align: center;
+    width: 92vw;
+  }
+  body .content .panel {
+    margin-top: 0px;
+  }
+  body .content .topPlayerPanel {
+    margin-top: 0px;
+    width: 92vw;
+  }
+  body .content .topPlayerPanel .topPlayerPanelContent {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .content .MainListPanel {
+    width: 92vw;
+  }
+  body .content .MainListPanel .MainListPanelContent {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .content .submitPanel {
+    width: 92vw;
+  }
+  body .content .joinDiscordPanel {
+    width: 92vw;
+  }
+  body .content .changelogPanel {
+    width: 92vw;
+  }
+  body .content .panel1 {
+    margin-top: 40px;
+  }
+  body .navbar ul a {
+    display: none;
+  }
 }
 
 body ul {
@@ -16,6 +90,10 @@ body a {
   text-decoration: none;
   color: black;
   text-shadow: 0 0 1em #dbdbdb;
+}
+
+body .longline {
+  width: 50%;
 }
 
 .navbarIcon {
