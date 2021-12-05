@@ -22,14 +22,39 @@ body a {
 }
 
 .navbarIcon .settingIcon {
-  height: 3vh;
-  width: 3vh;
-  padding-right: 34%;
+  height: 23px;
+  width: 40px;
+  margin-right: 4px;
+  padding: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 0.5em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.navbarIcon .accountIcon {
+  height: 30px;
+  width: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding: 5px;
+  border-radius: 0.5em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.settingIcon:hover {
+  background-color: #dadada;
+}
+
+.accountIcon:hover {
+  background-color: #dadada;
 }
 
 .navbar {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 4px;
+  padding-right: 4px;
   height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,5 +80,27 @@ body a {
   display: block;
   padding: 10px;
   text-align: center;
+  border-radius: 0.5em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.navbar ul a:hover {
+  background-color: #dadada;
+}
+
+.navbar .navbarTitle {
+  display: block;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  border-radius: 0.5em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.navbar .navbarTitle:hover {
+  background-color: #dadada;
 }
 /*# sourceMappingURL=style.css.map */
