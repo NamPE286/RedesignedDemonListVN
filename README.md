@@ -1,2 +1,2 @@
 # RedesignedDemonListVN
-Redesigned Demon List VN
+Link: https://nampe286.github.io/RedesignedDemonListVN/index.html
