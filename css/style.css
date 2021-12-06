@@ -44,9 +44,11 @@ body {
     margin-top: 40px;
     text-align: center;
     width: 92vw;
+    order: 1;
   }
   body .content .panel {
     margin-top: 0px;
+    order: 2;
   }
   body .content .topPlayerPanel {
     margin-top: 0px;
@@ -76,6 +78,7 @@ body {
   }
   body .content .panel1 {
     margin-top: 40px;
+    order: 3;
   }
   body .navbar ul a {
     display: none;
