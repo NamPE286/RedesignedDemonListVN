@@ -106,12 +106,15 @@ body .longline {
 }
 
 .navbarIcon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /*.accountIcon{
+        height: 30px;
+        width: 80px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding: 5px;
+        border-radius: 0.5em;
+        transition: 0.2s;
+    }*/
 }
 
 .navbarIcon .settingIcon {
@@ -126,35 +129,20 @@ body .longline {
   transition: 0.2s;
 }
 
-.navbarIcon .accountIcon {
-  height: 30px;
-  width: 80px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding: 5px;
-  border-radius: 0.5em;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
 .settingIcon:hover {
   background-color: #dadada;
 }
 
-.accountIcon:hover {
-  background-color: #dadada;
-}
-
 .navbar {
-  padding-left: 4px;
-  padding-right: 4px;
-  height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-left: 4px;
+  padding-right: 4px;
+  height: 45px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -167,12 +155,11 @@ body .longline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: 7em;
 }
 
 .navbar ul a {
-  display: block;
   padding: 10px;
-  text-align: center;
   border-radius: 0.5em;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -183,7 +170,9 @@ body .longline {
 }
 
 .navbar .navbarTitle {
-  display: block;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
