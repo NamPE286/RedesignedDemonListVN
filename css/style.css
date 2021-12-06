@@ -10,8 +10,8 @@ body {
 
 @media screen and (max-width: 1200px) {
   body .navbar {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 2em;
+    padding-right: 2em;
   }
   body .navbar .navbarTitle {
     font-size: 12px;
@@ -22,7 +22,7 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    width: 80px;
+    width: 3em;
   }
   body .content {
     -webkit-box-flex: 1;
