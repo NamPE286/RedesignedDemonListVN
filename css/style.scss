@@ -30,9 +30,11 @@ body{
                 margin-top: 40px;
                 text-align: center;
                 width: 92vw;
+                order: 1;
             }
             .panel{
-                margin-top: 0px;
+                margin-top: 40px;
+                order: 2;
             }
             .topPlayerPanel{
                 margin-top: 0px;
@@ -58,6 +60,7 @@ body{
             }
             .panel1{
                 margin-top: 40px;
+                order: 3;
             }
         }
         .navbar{
