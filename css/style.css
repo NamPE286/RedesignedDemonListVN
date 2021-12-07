@@ -387,7 +387,7 @@ hr {
           align-items: center;
   text-align: center;
   width: 100%;
-  margin-top: 2000px;
+  margin-top: 200px;
   margin-left: 40px;
   margin-right: 40px;
   border-radius: 0.5em;
@@ -402,7 +402,7 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px;
+  padding-top: 30px;
   font-size: 20px;
 }
 
