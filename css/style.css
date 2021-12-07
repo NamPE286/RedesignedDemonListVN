@@ -429,4 +429,22 @@ hr {
   padding-top: 30px;
   font-size: 20px;
 }
+
+.google-form {
+  border: 2px solid #777;
+  border-radius: 10px;
+  width: 70vw;
+  height: 78.8vw;
+  max-width: 600px;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.left-align > li {
+  padding: 5px;
+}
+
+/**/
 /*# sourceMappingURL=style.css.map */
