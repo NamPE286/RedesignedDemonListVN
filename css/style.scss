@@ -1,3 +1,43 @@
+:root {
+    --gray0: #f8f8f8;
+    --gray1: #dbe1e8;
+    --gray2: #b2becd;
+    --gray3: #6c7983;
+    --gray4: #454e56;
+    --gray5: #2a2e35;
+    --gray6: #12181b;
+    --blue: #0084a5;
+    --purple: #a82dd1;
+    --yellow: #fff565;
+}
+
+.light {
+    --bg: var(--gray0);
+    --bg-nav: linear-gradient(to right, var(--gray1), var(--gray3));
+    --bg-dropdown: var(--gray0);
+    --text: var(--gray6);
+    --border-color: var(--blue);
+    --bg-solar: var(--yellow);
+}
+  
+
+.dark {
+    --bg: var(--gray5);
+    --bg-nav: linear-gradient(to right, var(--gray5), var(--gray6));
+    --bg-dropdown: var(--gray6);
+    --text: var(--gray0);
+    --border-color: var(--purple);
+    --bg-solar: var(--blue);
+}
+
+#dark::before {
+    background: #2a2e35;
+}
+
+#light::before {
+    background: #ffffff;
+}
+
 body{
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap');
     font-family: 'Roboto', sans-serif;
@@ -5,7 +45,10 @@ body{
     margin-right: 30px;
     margin-top: 15px;
     margin-bottom: 15px;
-    background-color: white;
+    color: var(--text);
+    background: var(--bg);
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+
     @media screen and (max-width: 1200px) {
         .navbar{
             padding-left: 2em;
@@ -76,7 +119,7 @@ body{
     }
     a{
         text-decoration: none;
-        color: rgb(0, 0, 0);
+        color: var(--text);
         text-shadow: 0 0 1em #dbdbdb;
     }
     .longline{
@@ -94,6 +137,8 @@ body{
         padding-right: 7px;
         border-radius: 0.5em;
         transition: 0.2s;
+        background: var(--gray1);
+        color: var(--gray1);
     }
     /*.accountIcon{
         height: 30px;
@@ -120,6 +165,7 @@ body{
     align-items: center;
     border-radius: 0.5em;
     box-shadow: 0em 0em 1em #707070;
+    background: var(--bg-nav);
     ul{
         display: flex;
         margin-right: 7em;
