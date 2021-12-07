@@ -10,24 +10,34 @@
   --blue: #0084a5;
   --purple: #a82dd1;
   --yellow: #fff565;
+  --fadethingy: rgb(218, 218, 218);
+  --darktext: #ececec;
+  --shadowthingy: #707070;
 }
 
 .light {
   --bg: var(--gray0);
-  --bg-nav: linear-gradient(to right, var(--gray1), var(--gray3));
   --bg-dropdown: var(--gray0);
   --text: var(--gray6);
   --border-color: var(--blue);
   --bg-solar: var(--yellow);
+  --fadethingy: rgb(218, 218, 218);
+  --shadowthingy: #707070;
 }
 
 .dark {
-  --bg: var(--gray5);
-  --bg-nav: linear-gradient(to right, var(--gray5), var(--gray6));
+  --bg: var(--gray6);
   --bg-dropdown: var(--gray6);
-  --text: var(--gray0);
+  --text: var(--darktext);
   --border-color: var(--purple);
   --bg-solar: var(--blue);
+  --fadethingy: rgb(53, 53, 53);
+  --shadowthingy: #636363;
+}
+
+.dark .settingIcon {
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
 #dark::before {
@@ -51,6 +61,9 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
+  body .mainpanel1 {
+    margin-top: 30px;
+  }
   body .navbar {
     padding-left: 2em;
     padding-right: 2em;
@@ -140,7 +153,6 @@ body ul {
 body a {
   text-decoration: none;
   color: var(--text);
-  text-shadow: 0 0 1em #dbdbdb;
 }
 
 body .longline {
@@ -160,10 +172,11 @@ body .longline {
 }
 
 .navbarIcon .settingIcon {
-  height: 23px;
+  height: 25px;
   width: 40px;
   margin-right: 4px;
-  padding: 7px;
+  margin-top: 3px;
+  padding: 6px;
   padding-left: 7px;
   padding-right: 7px;
   border-radius: 0.5em;
@@ -189,8 +202,8 @@ body .longline {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 0.5em;
-  -webkit-box-shadow: 0em 0em 1em #707070;
-          box-shadow: 0em 0em 1em #707070;
+  -webkit-box-shadow: 0em 0em 0.5em var(--shadowthingy);
+          box-shadow: 0em 0em 0.5em var(--shadowthingy);
   background: var(--bg-nav);
 }
 
@@ -209,7 +222,7 @@ body .longline {
 }
 
 .navbar ul a:hover {
-  background-color: #dadada;
+  background-color: var(--fadethingy);
 }
 
 .navbar .navbarTitle {
@@ -226,7 +239,7 @@ body .longline {
 }
 
 .navbar .navbarTitle:hover {
-  background-color: #dadada;
+  background-color: var(--fadethingy);
 }
 
 .content {
@@ -256,8 +269,8 @@ body .longline {
   text-align: center;
   width: 300px;
   border-radius: 0.5em;
-  -webkit-box-shadow: 0em 0em 1em #707070;
-          box-shadow: 0em 0em 1em #707070;
+  -webkit-box-shadow: 0em 0em 0.5em var(--shadowthingy);
+          box-shadow: 0em 0em 0.5em var(--shadowthingy);
 }
 
 .topPlayerPanel .topPlayerPanelTitle {
@@ -310,8 +323,8 @@ hr {
   text-align: center;
   width: 300px;
   border-radius: 0.5em;
-  -webkit-box-shadow: 0em 0em 1em #707070;
-          box-shadow: 0em 0em 1em #707070;
+  -webkit-box-shadow: 0em 0em 0.5em var(--shadowthingy);
+          box-shadow: 0em 0em 0.5em var(--shadowthingy);
 }
 
 .MainListPanel .MainListPanelTitle {
@@ -379,8 +392,8 @@ hr {
   margin-left: 40px;
   margin-right: 40px;
   border-radius: 0.5em;
-  -webkit-box-shadow: 0em 0em 1em #707070;
-          box-shadow: 0em 0em 1em #707070;
+  -webkit-box-shadow: 0em 0em 0.5em var(--shadowthingy);
+          box-shadow: 0em 0em 0.5em var(--shadowthingy);
 }
 
 .mainpanel .topPlayTitle {
@@ -419,8 +432,8 @@ hr {
   width: 300px;
   height: 90px;
   border-radius: 0.5em;
-  -webkit-box-shadow: 0em 0em 1em #707070;
-          box-shadow: 0em 0em 1em #707070;
+  -webkit-box-shadow: 0em 0em 0.5em var(--shadowthingy);
+          box-shadow: 0em 0em 0.5em var(--shadowthingy);
 }
 
 .submitPanel .submitTitle {
@@ -433,7 +446,7 @@ hr {
 }
 
 .submitPanel .submitTitle:hover {
-  background-color: #dadada;
+  background-color: var(--fadethingy);
 }
 
 .joinDiscordPanel {
@@ -442,8 +455,8 @@ hr {
   width: 300px;
   height: 300px;
   border-radius: 0.5em;
-  -webkit-box-shadow: 0em 0em 1em #707070;
-          box-shadow: 0em 0em 1em #707070;
+  -webkit-box-shadow: 0em 0em 0.5em var(--shadowthingy);
+          box-shadow: 0em 0em 0.5em var(--shadowthingy);
 }
 
 .joinDiscordPanel .joinDiscordPanelTitle {
@@ -463,8 +476,8 @@ hr {
   width: 300px;
   height: 300px;
   border-radius: 0.5em;
-  -webkit-box-shadow: 0em 0em 1em #707070;
-          box-shadow: 0em 0em 1em #707070;
+  -webkit-box-shadow: 0em 0em 0.5em var(--shadowthingy);
+          box-shadow: 0em 0em 0.5em var(--shadowthingy);
 }
 
 .changelogPanel .changelogPanelTitle {
@@ -476,22 +489,6 @@ hr {
           justify-content: center;
   padding-top: 30px;
   font-size: 20px;
-}
-
-.google-form {
-  border: 2px solid #777;
-  border-radius: 10px;
-  width: 70vw;
-  height: 78.8vw;
-  max-width: 600px;
-}
-
-.left-align {
-  text-align: left;
-}
-
-.left-align > li {
-  padding: 5px;
 }
 
 /**/

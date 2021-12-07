@@ -9,25 +9,33 @@
     --blue: #0084a5;
     --purple: #a82dd1;
     --yellow: #fff565;
+    --fadethingy: rgb(218, 218, 218);
+    --darktext: #ececec;
+    --shadowthingy: #707070;
 }
 
 .light {
     --bg: var(--gray0);
-    --bg-nav: linear-gradient(to right, var(--gray1), var(--gray3));
     --bg-dropdown: var(--gray0);
     --text: var(--gray6);
     --border-color: var(--blue);
     --bg-solar: var(--yellow);
+    --fadethingy: rgb(218, 218, 218);
+    --shadowthingy: #707070;
 }
   
 
 .dark {
-    --bg: var(--gray5);
-    --bg-nav: linear-gradient(to right, var(--gray5), var(--gray6));
+    --bg: var(--gray6);
     --bg-dropdown: var(--gray6);
-    --text: var(--gray0);
+    --text: var(--darktext);
     --border-color: var(--purple);
     --bg-solar: var(--blue);
+    --fadethingy: rgb(53, 53, 53);
+    --shadowthingy: #636363;
+    .settingIcon{
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    }
 }
 
 #dark::before {
@@ -50,6 +58,9 @@ body{
     transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 
     @media screen and (max-width: 1200px) {
+        .mainpanel1{
+            margin-top: 30px;
+        }
         .navbar{
             padding-left: 2em;
             padding-right: 2em;
@@ -120,7 +131,6 @@ body{
     a{
         text-decoration: none;
         color: var(--text);
-        text-shadow: 0 0 1em #dbdbdb;
     }
     .longline{
         width: 50%;
@@ -129,16 +139,15 @@ body{
 
 .navbarIcon{
     .settingIcon{
-        height: 23px;
+        height: 25px;
         width: 40px;
         margin-right: 4px;
-        padding: 7px;
+        margin-top: 3px;
+        padding: 6px;
         padding-left: 7px;
         padding-right: 7px;
         border-radius: 0.5em;
         transition: 0.2s;
-        background: var(--gray1);
-        color: var(--gray1);
     }
     /*.accountIcon{
         height: 30px;
@@ -151,10 +160,10 @@ body{
     }*/
 }
 .settingIcon:hover{
-    background-color: rgb(218, 218, 218);
+    background-color:rgb(218, 218, 218);
 }
 //.accountIcon:hover{
-//    background-color: rgb(218, 218, 218);
+//    background-color: var(--fadethingy);
 //}
 .navbar{
     display: flex;
@@ -164,7 +173,7 @@ body{
     height: 45px;
     align-items: center;
     border-radius: 0.5em;
-    box-shadow: 0em 0em 1em #707070;
+    box-shadow: 0em 0em 0.5em var(--shadowthingy);
     background: var(--bg-nav);
     ul{
         display: flex;
@@ -175,7 +184,7 @@ body{
             transition: 0.2s;
         }
         a:hover{
-            background-color: rgb(218, 218, 218);
+            background-color: var(--fadethingy);
         }
     }
     .navbarTitle{
@@ -188,7 +197,7 @@ body{
         transition: 0.2s;
     }
     .navbarTitle:hover{
-        background-color: rgb(218, 218, 218);
+        background-color: var(--fadethingy);
     }
 }
 
@@ -206,7 +215,7 @@ body{
     text-align: center;
     width: 300px;
     border-radius: 0.5em;
-    box-shadow: 0em 0em 1em #707070;
+    box-shadow: 0em 0em 0.5em var(--shadowthingy);
     .topPlayerPanelTitle{
         display: flex;
         justify-content: center;
@@ -242,7 +251,7 @@ hr{
     text-align: center;
     width: 300px;
     border-radius: 0.5em;
-    box-shadow: 0em 0em 1em #707070;
+    box-shadow: 0em 0em 0.5em var(--shadowthingy);
     .MainListPanelTitle{
         display: flex;
         justify-content: center;
@@ -284,7 +293,7 @@ hr{
     margin-left: 40px;
     margin-right: 40px;
     border-radius: 0.5em;
-    box-shadow: 0em 0em 1em #707070;
+    box-shadow: 0em 0em 0.5em var(--shadowthingy);
     .topPlayTitle{
         display: flex;
         justify-content: center;
@@ -306,7 +315,7 @@ hr{
     width: 300px;
     height: 90px;
     border-radius: 0.5em;
-    box-shadow: 0em 0em 1em #707070;
+    box-shadow: 0em 0em 0.5em var(--shadowthingy);
     .submitTitle{
         width: 50%;
         border-radius: 0.5em;
@@ -315,7 +324,7 @@ hr{
         transition: 0.2s;
     }
     .submitTitle:hover{
-        background-color: rgb(218, 218, 218);
+        background-color: var(--fadethingy);
     }
 }
 .joinDiscordPanel{
@@ -324,7 +333,7 @@ hr{
     width: 300px;
     height: 300px;
     border-radius: 0.5em;
-    box-shadow: 0em 0em 1em #707070;
+    box-shadow: 0em 0em 0.5em var(--shadowthingy);
     .joinDiscordPanelTitle{
         display: flex;
         justify-content: center;
@@ -338,7 +347,7 @@ hr{
     width: 300px;
     height: 300px;
     border-radius: 0.5em;
-    box-shadow: 0em 0em 1em #707070;
+    box-shadow: 0em 0em 0.5em var(--shadowthingy);
     .changelogPanelTitle{
         display: flex;
         justify-content: center;
@@ -347,19 +356,5 @@ hr{
     }
 }
 
-.google-form {
-    border: 2px solid #777;
-    border-radius: 10px;
-    width: 70vw;
-    height: 78.8vw;
-    max-width: 600px;
-}
 
-.left-align {
-    text-align: left;
-}
-
-.left-align > li {
-    padding: 5px;
-}
 /**/
