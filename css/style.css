@@ -168,7 +168,7 @@ body a {
   color: var(--text);
 }
 
-body .longline {
+body hr {
   width: 50%;
 }
 
@@ -567,5 +567,48 @@ hr {
   background-color: var(--fadethingy);
 }
 
-/**/
+.level-card {
+  width: 50vw;
+  max-width: 400px;
+  border: 1px solid #777;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.level-card .level-images {
+  padding-right: 10px;
+}
+
+.level-card .level-profile {
+  border: 1px solid #333;
+  border-radius: 50%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+@media only screen and (max-width: 600px) {
+  .level-card .level-profile {
+    margin-top: 10px;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+.level-card .level-thumbnail {
+  aspect-ratio: 16/9;
+  padding: 10px;
+  width: 160px;
+  height: 90px;
+}
 /*# sourceMappingURL=style.css.map */
