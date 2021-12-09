@@ -6,7 +6,7 @@
   --gray3: #6c7983;
   --gray4: #454e56;
   --gray5: #2a2e35;
-  --gray6: #12181b;
+  --gray6: #131313;
   --blue: #0084a5;
   --purple: #a82dd1;
   --yellow: #fff565;
@@ -14,10 +14,12 @@
   --darktext: #ececec;
   --shadowthingy: #707070;
   --btnbg: #f1f1f1;
+  --padColor: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .light {
   --bg: var(--gray0);
+  --padColor: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   --bg-dropdown: var(--gray0);
   --text: var(--gray6);
   --border-color: var(--blue);
@@ -36,6 +38,7 @@
   --fadethingy: rgb(53, 53, 53);
   --shadowthingy: #636363;
   --btnbg: #12181b;
+  --padColor: linear-gradient(315deg, #161616 0%, #131313 74%);
 }
 
 .dark .settingIcon {
@@ -228,7 +231,7 @@ body .longline {
   border-radius: 0.5em;
   -webkit-box-shadow: 0em 0em 0.5em var(--shadowthingy);
           box-shadow: 0em 0em 0.5em var(--shadowthingy);
-  background: var(--bg-nav);
+  background: var(--padColor);
 }
 
 .navbar ul {
@@ -290,6 +293,7 @@ body .longline {
 }
 
 .topPlayerPanel {
+  background: var(--padColor);
   text-align: center;
   width: 300px;
   border-radius: 0.5em;
@@ -343,6 +347,7 @@ hr {
 }
 
 .MainListPanel {
+  background: var(--padColor);
   margin-top: 40px;
   text-align: center;
   width: 300px;
@@ -397,6 +402,7 @@ hr {
 }
 
 .mainpanel {
+  background: var(--padColor);
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -449,6 +455,7 @@ hr {
 }
 
 .submitPanel {
+  background: var(--padColor);
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -474,6 +481,7 @@ hr {
 }
 
 .joinDiscordPanel {
+  background: var(--padColor);
   margin-top: 40px;
   text-align: center;
   width: 300px;
@@ -495,6 +503,7 @@ hr {
 }
 
 .changelogPanel {
+  background: var(--padColor);
   margin-top: 40px;
   text-align: center;
   width: 300px;
