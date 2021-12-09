@@ -68,7 +68,13 @@ body{
         }
     }
     @media screen and (max-width: 1200px) {
-
+        .level-card{
+            width: 70vw;
+        }
+        .level-profile {
+            margin-top: 10px;
+            transform: translateY(-100%);
+        }
         .mainpanel1{
             margin-top: 30px;
         }
@@ -142,7 +148,7 @@ body{
         text-decoration: none;
         color: var(--text);
     }
-    hr {
+    .longline{
         width: 50%;
     }
 }
@@ -414,10 +420,9 @@ hr{
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: var(--fadethingy);}
-
+/**/
 .level-card {
-    width: 50vw;
-    max-width: 400px;
+    width: 40vw;
     border: 1px solid #777;
     border-radius: 10px;
     margin: 0 auto;
@@ -428,6 +433,7 @@ hr{
 
     .level-images {
         padding-right: 10px;
+        
     }
     .level-profile {
         border: 1px solid #333;
@@ -435,17 +441,17 @@ hr{
         transform: translateY(-100%);
     }
 
-    @media only screen and (max-width: 600px){
-        .level-profile {
-            margin-top: 10px;
-            transform: translateY(-100%);
-        }
-    }
-
     .level-thumbnail {
         aspect-ratio: 16/9;
         padding: 10px;
-        width: 160px;
-        height: 90px;
+        width: 240px;
+        height: 135px;
+        border-radius: 1em;
     }
+}
+.spacetop{
+    margin-top: 40px;
+}
+.spacebottom{
+    margin-bottom: 40px;
 }

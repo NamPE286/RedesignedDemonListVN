@@ -75,6 +75,14 @@ body .dropdown {
 }
 
 @media screen and (max-width: 1200px) {
+  body .level-card {
+    width: 70vw;
+  }
+  body .level-profile {
+    margin-top: 10px;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
   body .mainpanel1 {
     margin-top: 30px;
   }
@@ -168,7 +176,7 @@ body a {
   color: var(--text);
 }
 
-body hr {
+body .longline {
   width: 50%;
 }
 
@@ -567,9 +575,9 @@ hr {
   background-color: var(--fadethingy);
 }
 
+/**/
 .level-card {
-  width: 50vw;
-  max-width: 400px;
+  width: 40vw;
   border: 1px solid #777;
   border-radius: 10px;
   margin: 0 auto;
@@ -597,18 +605,19 @@ hr {
           transform: translateY(-100%);
 }
 
-@media only screen and (max-width: 600px) {
-  .level-card .level-profile {
-    margin-top: 10px;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-}
-
 .level-card .level-thumbnail {
   aspect-ratio: 16/9;
   padding: 10px;
-  width: 160px;
-  height: 90px;
+  width: 240px;
+  height: 135px;
+  border-radius: 1em;
+}
+
+.spacetop {
+  margin-top: 40px;
+}
+
+.spacebottom {
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=style.css.map */
