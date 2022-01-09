@@ -464,3 +464,26 @@ hr{
 .spacebottom{
     margin-bottom: 40px;
 }
+
+//mainpanel visibility
+#index{
+    display: flex
+}
+#mainlist{
+    display: none
+}
+#about{
+    display: none
+}
+#legacylist{
+    display: none;
+}
+#setting{
+    display: none
+}
+#submit{
+    display: none
+}
+#topplayer{
+    display: none
+}

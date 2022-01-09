@@ -629,4 +629,34 @@ hr {
 .spacebottom {
   margin-bottom: 40px;
 }
+
+#index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#mainlist {
+  display: none;
+}
+
+#about {
+  display: none;
+}
+
+#legacylist {
+  display: none;
+}
+
+#setting {
+  display: none;
+}
+
+#submit {
+  display: none;
+}
+
+#topplayer {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */

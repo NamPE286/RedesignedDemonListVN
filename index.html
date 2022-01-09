@@ -17,25 +17,25 @@
         <?xml version="1.0" encoding="utf-8"?>
 
         <ul>
-            <li ><a href="index.html">Home</a></li>
-            <li><a href="mainlist.html">Main List</a></li>
-            <li><a href="legacylist.html">Legacy List</a></li>
-            <li><a href="topplayer.html">Top Player</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="#" id="homeButton">Home</a></li>
+            <li><a href="#" id="mainlistButton">Main List</a></li>
+            <li><a href="#" id="legacylistButton">Legacy List</a></li>
+            <li><a href="#" id="topplayerButton">Top Player</a></li>
+            <li><a href="#" id="aboutButton">About</a></li>
         </ul>
 
         <div class="navbarIcon">
             <div class="dropdown">
                 <button class="dropbtn">Menu</button>
                 <div class="dropdown-content">
-                    <a href="index.html">Home</a>
-                    <a href="mainlist.html">Main List</a>
-                    <a href="legacylist.html">Legacy List</a>
-                    <a href="topplayer.html">Top Player</a>
-                    <a href="about.html">About</a>
+                    <a href="#" id="homeButton">Home</a>
+                    <a href="#" id="mainlistButton">Main List</a>
+                    <a href="#" id="legacylistButton">Legacy List</a>
+                    <a href="#" id="topplayerButton">Top Player</a>
+                    <a href="#" id="aboutButton">About</a>
                 </div>
             </div>
-            <a href="settings.html">
+            <a href="#" id="settingButton">
                 <svg class="settingIcon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 48 48">
                     <path d="M0 0h48v48h-48z" fill="none"/>
                     <path d="M38.86 25.95c.08-.64.14-1.29.14-1.95s-.06-1.31-.14-1.95l4.23-3.31c.38-.3.49-.84.24-1.28l-4-6.93c-.25-.43-.77-.61-1.22-.43l-4.98 2.01c-1.03-.79-2.16-1.46-3.38-1.97l-.75-5.3c-.09-.47-.5-.84-1-.84h-8c-.5 0-.91.37-.99.84l-.75 5.3c-1.22.51-2.35 1.17-3.38 1.97l-4.98-2.01c-.45-.17-.97 0-1.22.43l-4 6.93c-.25.43-.14.97.24 1.28l4.22 3.31c-.08.64-.14 1.29-.14 1.95s.06 1.31.14 1.95l-4.22 3.31c-.38.3-.49.84-.24 1.28l4 6.93c.25.43.77.61 1.22.43l4.98-2.01c1.03.79 2.16 1.46 3.38 1.97l.75 5.3c.08.47.49.84.99.84h8c.5 0 .91-.37.99-.84l.75-5.3c1.22-.51 2.35-1.17 3.38-1.97l4.98 2.01c.45.17.97 0 1.22-.43l4-6.93c.25-.43.14-.97-.24-1.28l-4.22-3.31zm-14.86 5.05c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/>
@@ -51,19 +51,19 @@
                 <a class="topPlayerPanelTitle" href="topplayer.html"><b>Top Player</b></a>
                 <div class="topPlayerPanelContent">
                     <div class="topplayer">
-                        <a class="tp"><b>Player</b><br></a><a class="dash">-</a><a class="point">1000pt</a>
+                        <a class="tp" id="tp1"><b>Player</b><br></a><a class="dash">-</a><a class="point">1000pt</a>
                         <hr></hr>
-                        <a class="tp"><b>Player</b><br></a><a class="dash">-</a><a class="point">1000pt</a>
+                        <a class="tp" id="tp2"><b>Player</b><br></a><a class="dash">-</a><a class="point">1000pt</a>
                         <hr></hr>
-                        <a class="tp"><b>Player</b><br></a><a class="dash">-</a><a class="point">1000pt</a>
+                        <a class="tp" id="tp3"><b>Player</b><br></a><a class="dash">-</a><a class="point">1000pt</a>
                         <hr></hr>
-                        <a class="tp"><b>Player</b><br></a><a class="dash">-</a><a class="point">1000pt</a>
+                        <a class="tp" id="tp4"><b>Player</b><br></a><a class="dash">-</a><a class="point">1000pt</a>
                         <hr></hr>
-                        <a class="tp"><b>Player</b><br></a><a class="dash">-</a><a class="point">1000pt</a>
+                        <a class="tp" id="tp5"><b>Player</b><br></a><a class="dash">-</a><a class="point">1000pt</a>
                         <hr></hr>
-                        <a class="tp"><b>Player</b><br></a><a class="dash">-</a><a class="point">1000pt</a>
+                        <a class="tp" id="tp6"><b>Player</b><br></a><a class="dash">-</a><a class="point">1000pt</a>
                         <hr></hr>
-                        <a class="tp"><b>Player</b><br></a><a class="dash">-</a><a class="point">1000pt</a>
+                        <a class="tp" id="tp7"><b>Player</b><br></a><a class="dash">-</a><a class="point">1000pt</a>
                     </div>
                 </div>
             </div>
@@ -71,24 +71,93 @@
                 <a class="MainListPanelTitle" href="mainlist.html"><b>Main List</b></a>
                 <div class="MainListPanelContent">
                     <div class="mainlist">
-                        <a class="ml"><b>Level</b><br>by Creator<br></a><a class="dash1">-</a><a class="point1">1000pt</a>
+                        <a class="ml" id="ml1"><b>Level</b><br>by Creator<br></a><a class="dash1">-</a><a class="point1">1000pt</a>
                         <hr></hr>
-                        <a class="ml"><b>Level</b><br>by Creator<br></a><a class="dash1">-</a><a class="point1">1000pt</a>
+                        <a class="ml" id="ml2"><b>Level</b><br>by Creator<br></a><a class="dash1">-</a><a class="point1">1000pt</a>
                         <hr></hr>
-                        <a class="ml"><b>Level</b><br>by Creator<br></a><a class="dash1">-</a><a class="point1">1000pt</a>
+                        <a class="ml" id="ml3"><b>Level</b><br>by Creator<br></a><a class="dash1">-</a><a class="point1">1000pt</a>
                         <hr></hr>
-                        <a class="ml"><b>Level</b><br>by Creator<br></a><a class="dash1">-</a><a class="point1">1000pt</a>
+                        <a class="ml" id="ml4"><b>Level</b><br>by Creator<br></a><a class="dash1">-</a><a class="point1">1000pt</a>
                         <hr></hr>
-                        <a class="ml"><b>Level</b><br>by Creator<br></a><a class="dash1">-</a><a class="point1">1000pt</a>
+                        <a class="ml" id="ml5"><b>Level</b><br>by Creator<br></a><a class="dash1">-</a><a class="point1">1000pt</a>
                         <hr></hr>
-                        <a class="ml"><b>Level</b><br>by Creator<br></a><a class="dash1">-</a><a class="point1">1000pt</a>
+                        <a class="ml" id="ml6"><b>Level</b><br>by Creator<br></a><a class="dash1">-</a><a class="point1">1000pt</a>
                         <hr></hr>
-                        <a class="ml"><b>Level</b><br>by Creator<br></a><a class="dash1">-</a><a class="point1">1000pt</a>
+                        <a class="ml" id="ml7"><b>Level</b><br>by Creator<br></a><a class="dash1">-</a><a class="point1">1000pt</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="mainpanel">
+        <div class="mainpanel" id="index">
+            <h2>Add content here</h2>
+            <hr class="longline"></hr>
+        </div>
+        <div class="mainpanel" id="mainlist">
+                <h2>Main List</h2>
+                <hr class="longline">
+                <div class="spacetop"></div>
+                <div class="level-card">
+                    <div class="level-images">
+                        <a href="">
+                            <img class="level-thumbnail" src="https://i.ytimg.com/vi/gOsM-DYAEhY/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLA8V1A64lS1VoDOy9OfH3Jsmn3lOQ" alt="Wintertime">
+                        </a>
+                    </div>
+                    <div class="level-content">
+                        <h3>Top 1: Wintertime</h3>
+                        <hr>
+                        <p>Points: 1</p>
+                        <p>Verified by: CaustiX</p>
+                    </div>
+                </div>
+            <div class="spacebottom"></div>
+        </div>
+        <div class="mainpanel" id="about">
+            <h2>About</h2>
+            <hr class="longline"></hr>
+        </div>
+        <div class="mainpanel" id="setting">
+            <h2>Settings</h2>
+            <hr class="longline">
+            <h3>Color Theme: </h3>
+            <div>
+                <a href="#" id="dark">Dark</a>
+                <a> | </a>
+                <a href="#" id="light">Light</a><br><br>    
+            </div>
+        </div>
+        <div class="mainpanel" id="submit">
+            <div>
+                <h2>Welcome to the GDVN featured demons list!</h2>
+                <hr class="longline"></hr>
+                
+                <ul class="h">
+                    <li>This is where we keep track of the 50 hardest featured demons created and verified legitimately by Vietnamese players, and also when other Vietnamese players manage to beat one of those levels!</li><br>
+                    <li>If you are a Vietnamese player wishing to submit your record on this list, you can fill in the form at the bottom of this page!</li>
+                </ul>
+                <hr class="longline"></hr>
+                <h2>Submission rules:</h2>
+                <br>
+                <ul class="left-align" class="h">
+                    <li>- Only 100% records on any demons on the list are acceptable.</li>
+                    <li>- Illegitimate records will be rejected related to any cheat tools mentioned or secret ways (However, FPS bypass is allowed, up to 300 FPS).</li>
+                    <li>- Stealing videos from others will not be accepted.</li>
+                </ul>
+                <div class="center">
+                    <iframe class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLScyjv64Ezp9-3kQPUvZ-aCpEjKue9jhXKqVnq2bFSGqARpzUg/viewform?embedded=true" width="640" height="1260" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
+                </div>
+                <hr class="longline">
+                <p>Doesn't work? <a href="https://forms.gle/YfRLRSrb1MPB8vqG7"><u>Click Here</u></a></p>
+            </div>
+        </div>
+        <div class="mainpanel" id="topplayer">
+            <div class="topPlay">
+                <h2>Add content here</h2>
+            </div>
+            <hr class="longline">
+            <div class="spacetop"></div>
+            <div class="spacebottom"></div>
+        </div>
+        <div class="mainpanel" id="legacylist">
             <div class="topPlay">
                 <a class="topPlayTitle"><b>Add Content Here</b></a>
             </div>
@@ -98,7 +167,7 @@
         </div>
         <div class="panel1">
             <div class="submitPanel">
-                <a class="submitTitle" href="submit.html"><b>Submit Record</b></a>
+                <a class="submitTitle" href="#" id="submitButton"><b>Submit Record</b></a>
             </div>
             <div class="joinDiscordPanel">
                 <a class="joinDiscordPanelTitle"><b>Join Our Discord Server</b></a>
