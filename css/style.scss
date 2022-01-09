@@ -467,23 +467,30 @@ hr{
 
 //mainpanel visibility
 #index{
-    display: flex
+    display: flex;
+    opacity: 100;
 }
 #mainlist{
-    display: none
+    display: none;
+    opacity: 0;
 }
 #about{
-    display: none
+    display: none;
+    opacity: 0;
 }
 #legacylist{
     display: none;
+    opacity: 0;
 }
 #setting{
-    display: none
+    display: none;
+    opacity: 0;
 }
 #submit{
-    display: none
+    display: none;
+    opacity: 0;
 }
 #topplayer{
-    display: none
+    display: none;
+    opacity: 0;
 }

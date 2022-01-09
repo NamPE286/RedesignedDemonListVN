@@ -11,6 +11,8 @@ const submitButton = document.getElementById('submitButton');
 
 const body = document.body;
 
+var activePage = 'index';
+
 // Get cache
 
 const theme = localStorage.getItem('theme');
@@ -30,61 +32,45 @@ lightButton.onclick = () => {
   localStorage.setItem('theme', 'light');
 }
 
-homeButton.onclick = () => {
-  document.getElementById('index').style.display="flex";
-  document.getElementById('mainlist').style.display="none";
-  document.getElementById('about').style.display="none";
-  document.getElementById('setting').style.display="none";
-  document.getElementById('submit').style.display="none";
-  document.getElementById('topplayer').style.display="none";
-  document.getElementById('legacylist').style.display="none";
+function pageTransition(s, s1){
+  activePage = s1;
+  var elm = document.getElementById(s);
+  elm.style.transition="all 0.2s ease-in";
+  elm.style.opacity="0";
+  elm.addEventListener("transitionend", function(e){
+    elm.style.display="none";
+    elm.clientWidth;
+    setTimeout(function(){
+      var elm1 = document.getElementById(s1);
+      elm1.style.display="flex";
+      elm1.clientWidth;
+      setTimeout(function(){
+        elm1.style.transition="all 0.2s ease-in";
+        elm1.style.opacity="100";
+      },10); 
+    },10);
+  });
 }
+
 mainlistButton.onclick = () => {
-  document.getElementById('index').style.display="none";
-  document.getElementById('mainlist').style.display="flex";
-  document.getElementById('about').style.display="none";
-  document.getElementById('setting').style.display="none";
-  document.getElementById('submit').style.display="none";
-  document.getElementById('topplayer').style.display="none";
-  document.getElementById('legacylist').style.display="none";
+  pageTransition(activePage, 'mainlist');
 }
+homeButton.onclick = () => {
+  pageTransition(activePage, 'index');
+}
+
 legacylistButton.onclick = () => {
-  document.getElementById('index').style.display="none";
-  document.getElementById('mainlist').style.display="none";
-  document.getElementById('about').style.display="none";
-  document.getElementById('setting').style.display="none";
-  document.getElementById('submit').style.display="none";
-  document.getElementById('topplayer').style.display="flex";
+  pageTransition(activePage, 'legacylist');
 }
 settingButton.onclick = () => {
-  document.getElementById('index').style.display="none";
-  document.getElementById('mainlist').style.display="none";
-  document.getElementById('about').style.display="none";
-  document.getElementById('setting').style.display="flex";
-  document.getElementById('submit').style.display="none";
-  document.getElementById('topplayer').style.display="none";
+  pageTransition(activePage, 'setting');
 }
 aboutButton.onclick = () => {
-  document.getElementById('index').style.display="none";
-  document.getElementById('mainlist').style.display="none";
-  document.getElementById('about').style.display="flex";
-  document.getElementById('setting').style.display="none";
-  document.getElementById('submit').style.display="none";
-  document.getElementById('topplayer').style.display="none";
+  pageTransition(activePage, 'about');
 }
 topplayerButton.onclick = () => {
-  document.getElementById('index').style.display="none";
-  document.getElementById('mainlist').style.display="none";
-  document.getElementById('about').style.display="none";
-  document.getElementById('setting').style.display="none";
-  document.getElementById('submit').style.display="none";
-  document.getElementById('topplayer').style.display="flex";
+  pageTransition(activePage, 'topplayer');
 }
 submitButton.onclick = () => {
-  document.getElementById('index').style.display="none";
-  document.getElementById('mainlist').style.display="none";
-  document.getElementById('about').style.display="none";
-  document.getElementById('setting').style.display="none";
-  document.getElementById('submit').style.display="flex";
-  document.getElementById('topplayer').style.display="none";
+  pageTransition(activePage, 'submit');
 }
