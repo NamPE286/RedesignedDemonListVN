@@ -424,6 +424,8 @@ hr {
   border-radius: 0.5em;
   -webkit-box-shadow: 0em 0em 0.5em var(--shadowthingy);
           box-shadow: 0em 0em 0.5em var(--shadowthingy);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .mainpanel .topPlayTitle {
@@ -630,40 +632,17 @@ hr {
   margin-bottom: 40px;
 }
 
-#index {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 100;
-}
-
-#mainlist {
-  display: none;
+.mainpanelHidden {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   opacity: 0;
 }
 
-#about {
+.mainpanelNone {
   display: none;
-  opacity: 0;
 }
 
-#legacylist {
-  display: none;
-  opacity: 0;
-}
-
-#setting {
-  display: none;
-  opacity: 0;
-}
-
-#submit {
-  display: none;
-  opacity: 0;
-}
-
-#topplayer {
-  display: none;
-  opacity: 0;
+#ghost {
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */

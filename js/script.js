@@ -11,7 +11,7 @@ const submitButton = document.getElementById('submitButton');
 
 const body = document.body;
 
-var activePage = 'index';
+//var activePage = 'index';
 
 // Get cache
 
@@ -28,49 +28,62 @@ darkButton.onclick = () => {
 
 lightButton.onclick = () => {
   body.classList.replace('dark', 'light');
-
   localStorage.setItem('theme', 'light');
 }
+function setNone(){
+  document.getElementById('index').classList.add('mainpanelNone');
+  document.getElementById('mainlistMP').classList.add('mainpanelNone');
+  document.getElementById('legacylist').classList.add('mainpanelNone');
+  document.getElementById('setting').classList.add('mainpanelNone');
+  document.getElementById('about').classList.add('mainpanelNone');
+  document.getElementById('topplayer').classList.add('mainpanelNone');
+  document.getElementById('submit').classList.add('mainpanelNone');
+}
+function setVisibility(){
+  document.getElementById('index').classList.add('mainpanelHidden');
+  document.getElementById('mainlistMP').classList.add('mainpanelHidden');
+  document.getElementById('legacylist').classList.add('mainpanelHidden');
+  document.getElementById('setting').classList.add('mainpanelHidden');
+  document.getElementById('about').classList.add('mainpanelHidden');
+  document.getElementById('topplayer').classList.add('mainpanelHidden');
+  document.getElementById('submit').classList.add('mainpanelHidden');
+}
+setNone();
+setVisibility();
+document.getElementById('index').classList.remove('mainpanelNone');
+document.getElementById('index').classList.remove('mainpanelHidden');
 
-function pageTransition(s, s1){
-  activePage = s1;
-  var elm = document.getElementById(s);
-  elm.style.transition="all 0.2s ease-in";
-  elm.style.opacity="0";
-  elm.addEventListener("transitionend", function(e){
-    elm.style.display="none";
-    elm.clientWidth;
+function pageTransition(s1){
+  var elm1 = document.getElementById(s1);
+  setVisibility();
+  setTimeout(function(){
+    setNone();
+    elm1.classList.remove('mainpanelNone');
     setTimeout(function(){
-      var elm1 = document.getElementById(s1);
-      elm1.style.display="flex";
-      elm1.clientWidth;
-      setTimeout(function(){
-        elm1.style.transition="all 0.2s ease-in";
-        elm1.style.opacity="100";
-      },10); 
-    },10);
-  });
+      elm1.classList.remove('mainpanelHidden');
+    },100);
+  },200);
 }
 
 mainlistButton.onclick = () => {
-  pageTransition(activePage, 'mainlist');
+  pageTransition('mainlistMP');
 }
 homeButton.onclick = () => {
-  pageTransition(activePage, 'index');
+  pageTransition('index');
 }
 
 legacylistButton.onclick = () => {
-  pageTransition(activePage, 'legacylist');
+  pageTransition('legacylist');
 }
 settingButton.onclick = () => {
-  pageTransition(activePage, 'setting');
+  pageTransition('setting');
 }
 aboutButton.onclick = () => {
-  pageTransition(activePage, 'about');
+  pageTransition('about');
 }
 topplayerButton.onclick = () => {
-  pageTransition(activePage, 'topplayer');
+  pageTransition('topplayer');
 }
 submitButton.onclick = () => {
-  pageTransition(activePage, 'submit');
+  pageTransition('submit');
 }
