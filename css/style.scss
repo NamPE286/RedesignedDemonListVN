@@ -110,6 +110,7 @@ body{
                 order: 2;
             }
             .topPlayerPanel{
+                transition: all 0.2s ease-in;
                 margin-top: 0px;
                 width: 92vw;
                 .topPlayerPanelContent{
@@ -117,18 +118,22 @@ body{
                 }
             }
             .MainListPanel{
+                transition: all 0.2s ease-in;
                 width: 92vw;
                 .MainListPanelContent{
                     justify-content: center;
                 }
             }
             .submitPanel{
+                transition: all 0.2s ease-in;
                 width: 92vw;
             }
             .joinDiscordPanel{
+                transition: all 0.2s ease-in;
                 width: 92vw;
             }
             .changelogPanel{
+                transition: all 0.2s ease-in;
                 width: 92vw;
             }
             .panel1{
@@ -432,7 +437,7 @@ hr{
   .dropdown:hover .dropbtn {background-color: var(--fadethingy);}
 /**/
 .level-card {
-    width: 40vw;
+    width: 60%;
     border: 1px solid #777;
     border-radius: 10px;
     margin: 0 auto;

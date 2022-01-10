@@ -134,6 +134,8 @@ body .dropdown {
             order: 2;
   }
   body .content .topPlayerPanel {
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
     margin-top: 0px;
     width: 92vw;
   }
@@ -143,6 +145,8 @@ body .dropdown {
             justify-content: center;
   }
   body .content .MainListPanel {
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
     width: 92vw;
   }
   body .content .MainListPanel .MainListPanelContent {
@@ -151,12 +155,18 @@ body .dropdown {
             justify-content: center;
   }
   body .content .submitPanel {
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
     width: 92vw;
   }
   body .content .joinDiscordPanel {
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
     width: 92vw;
   }
   body .content .changelogPanel {
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
     width: 92vw;
   }
   body .content .panel1 {
@@ -588,7 +598,7 @@ hr {
 
 /**/
 .level-card {
-  width: 40vw;
+  width: 60%;
   border: 1px solid #777;
   border-radius: 10px;
   margin: 0 auto;
