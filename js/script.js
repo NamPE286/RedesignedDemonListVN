@@ -9,6 +9,14 @@ const aboutButton = document.getElementById('aboutButton');
 const settingButton = document.getElementById('settingButton');
 const submitButton = document.getElementById('submitButton');
 
+const homeButton1 = document.getElementById('homeButton1');
+const mainlistButton1 = document.getElementById('mainlistButton1');
+const legacylistButton1 = document.getElementById('legacylistButton1');
+const topplayerButton1 = document.getElementById('topplayerButton1');
+const aboutButton1 = document.getElementById('aboutButton1');
+const settingButton1 = document.getElementById('settingButton1');
+const submitButton1 = document.getElementById('submitButton1');
+
 const body = document.body;
 
 //var activePage = 'index';
@@ -71,7 +79,6 @@ mainlistButton.onclick = () => {
 homeButton.onclick = () => {
   pageTransition('index');
 }
-
 legacylistButton.onclick = () => {
   pageTransition('legacylist');
 }
@@ -86,4 +93,21 @@ topplayerButton.onclick = () => {
 }
 submitButton.onclick = () => {
   pageTransition('submit');
+}
+//mobile
+mainlistButton1.onclick = () => {
+  pageTransition('mainlistMP');
+}
+homeButton1.onclick = () => {
+  pageTransition('index');
+}
+
+legacylistButton1.onclick = () => {
+  pageTransition('legacylist');
+}
+aboutButton1.onclick = () => {
+  pageTransition('about');
+}
+topplayerButton1.onclick = () => {
+  pageTransition('topplayer');
 }
